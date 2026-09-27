@@ -2,74 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ========================================================
-         SEO & IDENTITY
-    ========================================================= -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f7f5">
 
     <title>Danang Siseka — Personal Website</title>
 
     <meta
         name="description"
-        content="Danang Siseka — personal website and digital archive covering science, research, writing, technology, and an ongoing academic journey."
+        content="Personal website and digital portfolio of Danang Siseka — research, writing, programming, achievements, interests, and digital presence."
     >
 
-    <meta
-        name="author"
-        content="Rasya Danang Kurnia Siseka"
-    >
-
-    <meta
-        name="keywords"
-        content="Danang Siseka, Rasya Danang Kurnia Siseka, student, science, physics, chemistry, research, writing, technology, Sidoarjo"
-    >
-
-    <meta
-        name="theme-color"
-        content="#f8f8f6"
-    >
-
+    <meta name="author" content="Danang Siseka">
     <meta name="robots" content="index, follow">
 
+    <link rel="canonical" href="https://danangsiseka.github.io/">
+
     <!-- Open Graph -->
-
-    <meta
-        property="og:title"
-        content="Danang Siseka — Personal Website"
-    >
-
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://danangsiseka.github.io/">
+    <meta property="og:title" content="Danang Siseka — Personal Website">
     <meta
         property="og:description"
-        content="Personal website and digital archive of Danang Siseka — science, research, writing, technology, and more."
+        content="Personal website and digital portfolio of Danang Siseka — research, writing, programming, achievements, interests, and digital presence."
     >
+    <meta property="og:site_name" content="Danang Siseka">
 
-    <meta
-        property="og:type"
-        content="website"
-    >
-
-    <meta
-        property="og:url"
-        content="https://danangsiseka.github.io/"
-    >
-
-    <meta
-        property="og:site_name"
-        content="Danang Siseka"
-    >
-
-    <!-- Canonical URL -->
-
-    <link
-        rel="canonical"
-        href="https://danangsiseka.github.io/"
-    >
-
-    <!-- ========================================================
-         STRUCTURED DATA
-    ========================================================= -->
-
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -77,6 +36,13 @@
         "name": "Rasya Danang Kurnia Siseka",
         "alternateName": "Danang Siseka",
         "url": "https://danangsiseka.github.io/",
+        "image": "https://danangsiseka.github.io/",
+        "jobTitle": "Student",
+        "description": "High school student interested in science, technology, writing, programming, and learning across disciplines.",
+        "affiliation": {
+            "@type": "EducationalOrganization",
+            "name": "SMAN 1 Sidoarjo"
+        },
         "sameAs": [
             "https://github.com/danangsiseka",
             "https://www.instagram.com/danangsiseka",
@@ -92,967 +58,638 @@
     }
     </script>
 
-    <!-- ========================================================
-         STYLESHEET
-    ========================================================= -->
-
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
 
-    <!-- ========================================================
-         HEADER
-    ========================================================= -->
-
+    <!-- =========================================================
+         Header
+         ========================================================= -->
     <header class="site-header">
-
-        <nav class="navbar container">
-
-            <a href="#home" class="logo">
-                Danang<span>.</span>
+        <div class="container header-inner">
+            <a class="site-logo" href="#top" aria-label="Danang Siseka home">
+                Danang Siseka
             </a>
 
-            <div class="nav-links">
-
-                <a href="#about">
-                    About
-                </a>
-
-                <a href="#education">
-                    Education
-                </a>
-
-                <a href="#research">
-                    Research
-                </a>
-
-                <a href="#writing">
-                    Writing
-                </a>
-
-                <a href="#achievements">
-                    Achievements
-                </a>
-
-            </div>
-
-        </nav>
-
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#curiosity">Curiosity</a>
+                <a href="#research">Research</a>
+                <a href="#writing">Writing</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#presence">Presence</a>
+            </nav>
+        </div>
     </header>
 
+    <main id="top">
 
-    <main>
+        <!-- =====================================================
+             Hero
+             ===================================================== -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Building · Curiosity · Science · Writing · Technology</p>
 
-        <!-- ====================================================
-             HERO
-        ===================================================== -->
+                    <h1 class="hero-title">
+                        Danang<br>
+                        Siseka
+                    </h1>
 
-        <section id="home" class="hero">
+                    <p class="hero-description">
+                        A student exploring science, technology, writing, programming,
+                        and the many questions that make learning worth pursuing.
+                    </p>
 
-            <div class="container hero-content">
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#about">
+                            Explore
+                        </a>
 
-                <p class="eyebrow">
-                    Student · Science · Writing · Technology
-                </p>
+                        <a
+                            class="button button-secondary"
+                            href="https://github.com/danangsiseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <h1>
-                    Exploring ideas.<br>
-                    Building a path.
-                </h1>
+        <!-- =====================================================
+             About
+             ===================================================== -->
+        <section id="about">
+            <div class="container">
 
-                <p class="hero-description">
-                    I'm Danang Siseka, a high school student interested
-                    in science, technology, writing, and the many questions
-                    that come with curiosity.
-                </p>
+                <div class="section-header">
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">A work in progress.</h2>
+                    <p class="section-description">
+                        This website is a long-term record of what I am learning,
+                        creating, researching, and exploring.
+                    </p>
+                </div>
 
-                <div class="hero-actions">
+                <div class="about-grid">
+
+                    <div class="about-content">
+                        <p>
+                            I am <strong>Rasya Danang Kurnia Siseka</strong>, publicly known
+                            as <strong>Danang Siseka</strong>, a high school student at
+                            <strong>SMAN 1 Sidoarjo</strong>.
+                        </p>
+
+                        <p>
+                            My academic interests include physics, chemistry, mathematics,
+                            biology, engineering, and science and technology. I also enjoy
+                            programming, writing, literature, music, chess, sports, and
+                            other areas that give me opportunities to learn something new.
+                        </p>
+
+                        <p>
+                            I see curiosity as an important part of development. This site
+                            brings together work that would otherwise be scattered across
+                            different platforms and serves as an archive that can grow with me.
+                        </p>
+                    </div>
+
+                    <div class="about-facts">
+                        <div class="fact">
+                            <span class="fact-label">Current school</span>
+                            <span class="fact-value">SMAN 1 Sidoarjo</span>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact-label">Focus</span>
+                            <span class="fact-value">Science &amp; Technology</span>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact-label">Interests</span>
+                            <span class="fact-value">Research, Writing, Programming</span>
+                        </div>
+
+                        <div class="fact">
+                            <span class="fact-label">Based in</span>
+                            <span class="fact-value">Sidoarjo, Indonesia</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Education
+             ===================================================== -->
+        <section id="education">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">Education</span>
+                    <h2 class="section-title">Where the journey is taking shape.</h2>
+                    <p class="section-description">
+                        A simple record of my formal education so far.
+                    </p>
+                </div>
+
+                <div class="education-list">
+
+                    <article class="education-item">
+                        <div class="education-period">2025 — Present</div>
+
+                        <div class="education-content">
+                            <h3>SMAN 1 Sidoarjo</h3>
+                            <p>
+                                Senior high school education with a growing focus on
+                                science, technology, research, and independent learning.
+                            </p>
+
+                            <div class="tags">
+                                <span class="tag">Science</span>
+                                <span class="tag">Technology</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="education-item">
+                        <div class="education-period">2023 — 2025</div>
+
+                        <div class="education-content">
+                            <h3>SMPN 1 Sidoarjo</h3>
+                            <p>
+                                Junior high school education through an accelerated program.
+                            </p>
+
+                            <div class="tags">
+                                <span class="tag">Accelerated Program</span>
+                                <span class="tag">Learning</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Curiosity
+             ===================================================== -->
+        <section id="curiosity">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">Curiosity</span>
+                    <h2 class="section-title">Things I keep coming back to.</h2>
+                    <p class="section-description">
+                        My interests are broad, but they often connect through curiosity,
+                        problem solving, and the desire to understand how things work.
+                    </p>
+                </div>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <div>
+                            <h3>Science</h3>
+                            <p>
+                                Physics, chemistry, mathematics, biology, and the process
+                                of turning questions into evidence-based understanding.
+                            </p>
+                        </div>
+
+                        <div class="tags">
+                            <span class="tag">Physics</span>
+                            <span class="tag">Chemistry</span>
+                            <span class="tag">Mathematics</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Technology</h3>
+                            <p>
+                                Programming, engineering, digital systems, and practical
+                                tools that turn ideas into something usable.
+                            </p>
+                        </div>
+
+                        <div class="tags">
+                            <span class="tag">Programming</span>
+                            <span class="tag">Engineering</span>
+                            <span class="tag">Computing</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Writing &amp; Culture</h3>
+                            <p>
+                                Essays, literature, ideas, music, and other forms of
+                                expression that help explore how people think and create.
+                            </p>
+                        </div>
+
+                        <div class="tags">
+                            <span class="tag">Writing</span>
+                            <span class="tag">Literature</span>
+                            <span class="tag">Music</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Research
+             ===================================================== -->
+        <section id="research">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">Research</span>
+                    <h2 class="section-title">Questions worth investigating.</h2>
+                    <p class="section-description">
+                        Selected academic and research-oriented work. Larger works can
+                        be accessed through their original publication platforms.
+                    </p>
+                </div>
+
+                <div class="research-grid">
+
+                    <article class="card">
+                        <div>
+                            <h3>S-DRY</h3>
+                            <p>
+                                An agricultural innovation concept focused on post-harvest
+                                loss mitigation through automated, hybrid solar-powered
+                                grain protection.
+                            </p>
+
+                            <div class="tags">
+                                <span class="tag">Agriculture</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Automation</span>
+                            </div>
+                        </div>
+
+                        <a
+                            class="card-link"
+                            href="https://independent.academia.edu/RasyaDanangKurniaSiseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View research profile →
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Science &amp; Innovation</h3>
+                            <p>
+                                A growing collection of school research, scientific
+                                writing, and ideas developed through independent study.
+                            </p>
+
+                            <div class="tags">
+                                <span class="tag">Science</span>
+                                <span class="tag">Innovation</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+
+                        <a
+                            class="card-link"
+                            href="https://independent.academia.edu/RasyaDanangKurniaSiseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Academia.edu →
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Future Work</h3>
+                            <p>
+                                More research projects will be added here as they are
+                                developed, documented, and published.
+                            </p>
+
+                            <div class="tags">
+                                <span class="tag">Learning</span>
+                                <span class="tag">Experimentation</span>
+                            </div>
+                        </div>
+
+                        <span class="card-link" aria-hidden="true">
+                            Coming over time →
+                        </span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Writing
+             ===================================================== -->
+        <section id="writing">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">Writing</span>
+                    <h2 class="section-title">Ideas in words.</h2>
+                    <p class="section-description">
+                        Writing across essays, literature, reflections, and other forms
+                        of long-form thinking.
+                    </p>
+                </div>
+
+                <div class="writing-grid">
+
+                    <article class="card">
+                        <div>
+                            <h3>Medium</h3>
+                            <p>
+                                Articles, reflections, and ideas published in long-form format.
+                            </p>
+                        </div>
+
+                        <a
+                            class="card-link"
+                            href="https://medium.com/@danangsiseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Read on Medium →
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Quora</h3>
+                            <p>
+                                Answers and explanations covering questions from different
+                                areas of knowledge.
+                            </p>
+                        </div>
+
+                        <a
+                            class="card-link"
+                            href="https://id.quora.com/profile/Danang-Siseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Quora →
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Substack</h3>
+                            <p>
+                                A space for longer-form writing and ideas that benefit from
+                                an ongoing publication format.
+                            </p>
+                        </div>
+
+                        <a
+                            class="card-link"
+                            href="https://substack.com/@danangsiseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visit Substack →
+                        </a>
+                    </article>
+
+                    <article class="card">
+                        <div>
+                            <h3>Wattpad</h3>
+                            <p>
+                                Literary and creative writing collected in one place.
+                            </p>
+                        </div>
+
+                        <a
+                            class="card-link"
+                            href="https://www.wattpad.com/user/DanangSiseka"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Wattpad →
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Achievements
+             ===================================================== -->
+        <section id="achievements">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">Achievements</span>
+                    <h2 class="section-title">Milestones along the way.</h2>
+                    <p class="section-description">
+                        Selected credentials and accomplishments that form part of my
+                        academic and personal record.
+                    </p>
+                </div>
+
+                <div class="achievements">
+
+                    <article class="achievement">
+                        <p class="achievement-value">680</p>
+                        <h3 class="achievement-title">
+                            UKBI Score
+                        </h3>
+                        <p class="achievement-description">
+                            Indonesian Language Proficiency Test (UKBI) certificate.
+                        </p>
+                    </article>
+
+                    <article class="achievement">
+                        <p class="achievement-value">SDGs</p>
+                        <h3 class="achievement-title">
+                            Food Innovation Essay
+                        </h3>
+                        <p class="achievement-description">
+                            Research-oriented innovation writing related to food,
+                            sustainability, and the Sustainable Development Goals.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Digital Presence
+             ===================================================== -->
+        <section id="presence">
+            <div class="container">
+
+                <div class="section-header">
+                    <span class="section-label">Digital Presence</span>
+                    <h2 class="section-title">Find me elsewhere.</h2>
+                    <p class="section-description">
+                        A directory of platforms where my work, writing, projects,
+                        and activities can be found.
+                    </p>
+                </div>
+
+                <div class="platform-grid">
 
                     <a
-                        href="#about"
-                        class="button button-primary"
-                    >
-                        About Me
-                    </a>
-
-                    <a
+                        class="platform"
                         href="https://github.com/danangsiseka"
-                        class="button button-secondary"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         GitHub
                     </a>
 
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             ABOUT
-        ===================================================== -->
-
-        <section id="about" class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        About
-                    </p>
-
-                    <h2>
-                        A place for the things I learn,
-                        explore, and create.
-                    </h2>
-
-                </div>
-
-
-                <div class="about-content">
-
-                    <div class="about-main">
-
-                        <p>
-                            My name is
-                            <strong>Rasya Danang Kurnia Siseka</strong>,
-                            publicly known as
-                            <strong>Danang Siseka</strong>.
-                        </p>
-
-                        <p>
-                            I am a high school student at
-                            <strong>SMAN 1 Sidoarjo</strong>,
-                            with a strong interest in science,
-                            technology, writing, and continuous learning.
-                        </p>
-
-                        <p>
-                            My current academic interests are centered
-                            around physics and chemistry, with additional
-                            curiosity in mathematics and biology.
-                        </p>
-
-                        <p>
-                            Outside academics, I explore many different
-                            areas — including programming, literature,
-                            music, chess, sports, and other things
-                            that catch my curiosity.
-                        </p>
-
-                        <p>
-                            This website is my personal archive:
-                            a place to collect my work, document my
-                            development, and connect the different parts
-                            of my digital presence.
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-side">
-
-                        <div class="about-item">
-
-                            <span class="about-label">
-                                Currently
-                            </span>
-
-                            <span>
-                                High School Student
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-item">
-
-                            <span class="about-label">
-                                School
-                            </span>
-
-                            <span>
-                                SMAN 1 Sidoarjo
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-item">
-
-                            <span class="about-label">
-                                Academic Focus
-                            </span>
-
-                            <span>
-                                Physics · Chemistry
-                            </span>
-
-                        </div>
-
-
-                        <div class="about-item">
-
-                            <span class="about-label">
-                                Interests
-                            </span>
-
-                            <span>
-                                Science · Technology · Writing
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             EDUCATION
-        ===================================================== -->
-
-        <section id="education" class="section section-alt">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Education
-                    </p>
-
-                    <h2>
-                        Where the journey began
-                        and where it is going.
-                    </h2>
-
-                </div>
-
-
-                <div class="education-list">
-
-                    <!-- Current Education -->
-
-                    <article class="education-item">
-
-                        <div class="education-period">
-                            2025 — Present
-                        </div>
-
-                        <div class="education-content">
-
-                            <span class="tag">
-                                Current
-                            </span>
-
-                            <h3>
-                                SMAN 1 Sidoarjo
-                            </h3>
-
-                            <p>
-                                Currently continuing my high school
-                                education with particular interests
-                                in physics, chemistry, science,
-                                and technology.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- Previous Education -->
-
-                    <article class="education-item">
-
-                        <div class="education-period">
-                            2023 — 2025
-                        </div>
-
-                        <div class="education-content">
-
-                            <span class="tag">
-                                Previous
-                            </span>
-
-                            <h3>
-                                SMPN 1 Sidoarjo
-                            </h3>
-
-                            <p>
-                                Completed junior high school through
-                                an accelerated program.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             CURIOSITY
-        ===================================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Curiosity
-                    </p>
-
-                    <h2>
-                        More than one direction.
-                    </h2>
-
-                </div>
-
-
-                <div class="cards">
-
-                    <!-- Science -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Science
-                        </h3>
-
-                        <p>
-                            Physics and chemistry are currently at
-                            the center of my academic interests,
-                            alongside mathematics and biology.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Technology -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Technology
-                        </h3>
-
-                        <p>
-                            I explore programming and technology
-                            as tools for learning, experimentation,
-                            problem solving, and building things.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Writing -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Writing
-                        </h3>
-
-                        <p>
-                            Writing is another way I explore ideas —
-                            from science, psychology, and philosophy
-                            to poetry, fiction, and personal reflection.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             RESEARCH
-        ===================================================== -->
-
-        <section id="research" class="section section-alt">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        01 — Research
-                    </p>
-
-                    <h2>
-                        Questions worth exploring.
-                    </h2>
-
-                </div>
-
-
-                <div class="cards">
-
-                    <!-- Academic Work -->
-
-                    <article class="card card-featured">
-
-                        <div class="card-top">
-
-                            <span class="tag">
-                                Research
-                            </span>
-
-                            <span class="card-number">
-                                01
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Academic Work
-                        </h3>
-
-                        <p>
-                            Research, essays, investigations,
-                            and academic work developed throughout
-                            my learning journey.
-                        </p>
-
-                        <a
-                            href="https://independent.academia.edu/RasyaDanangKurniaSiseka"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Visit Academia.edu →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Scientific Interests -->
-
-                    <article class="card">
-
-                        <div class="card-top">
-
-                            <span class="tag">
-                                Focus
-                            </span>
-
-                            <span class="card-number">
-                                02
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Scientific Interests
-                        </h3>
-
-                        <p>
-                            My current scientific interests include
-                            physics and chemistry, with broader
-                            curiosity across mathematics and biology.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Research Archive -->
-
-                    <article class="card">
-
-                        <div class="card-top">
-
-                            <span class="tag">
-                                Archive
-                            </span>
-
-                            <span class="card-number">
-                                03
-                            </span>
-
-                        </div>
-
-                        <h3>
-                            Research Archive
-                        </h3>
-
-                        <p>
-                            A growing collection of papers, essays,
-                            investigations, and other academic work.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             WRITING
-        ===================================================== -->
-
-        <section id="writing" class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        02 — Writing
-                    </p>
-
-                    <h2>
-                        Thinking through writing.
-                    </h2>
-
-                </div>
-
-
-                <div class="cards">
-
-                    <!-- Essays -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            01
-                        </span>
-
-                        <h3>
-                            Essays & Ideas
-                        </h3>
-
-                        <p>
-                            Writing about science, psychology,
-                            philosophy, self-improvement, and
-                            ideas that interest me.
-                        </p>
-
-                        <a
-                            href="https://medium.com/@danangsiseka"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Medium →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Literature -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            02
-                        </span>
-
-                        <h3>
-                            Literature
-                        </h3>
-
-                        <p>
-                            Poetry, fiction, mini novels, and
-                            other forms of creative writing.
-                        </p>
-
-                        <a
-                            href="https://www.wattpad.com/user/DanangSiseka"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Wattpad →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Long-form Answers -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            03
-                        </span>
-
-                        <h3>
-                            Answers & Discussions
-                        </h3>
-
-                        <p>
-                            Long-form answers and discussions on
-                            topics that I find interesting,
-                            especially science and learning.
-                        </p>
-
-                        <a
-                            href="https://id.quora.com/profile/Danang-Siseka"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Quora →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Other Writing -->
-
-                    <article class="card">
-
-                        <span class="card-number">
-                            04
-                        </span>
-
-                        <h3>
-                            Other Writing
-                        </h3>
-
-                        <p>
-                            Additional writing and creative work
-                            published across Substack, Blogger,
-                            and other platforms.
-                        </p>
-
-                        <a
-                            href="https://substack.com/@danangsiseka"
-                            class="card-link"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Substack →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             ACHIEVEMENTS
-        ===================================================== -->
-
-        <section id="achievements" class="section section-alt">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        03 — Achievements
-                    </p>
-
-                    <h2>
-                        Milestones along the way.
-                    </h2>
-
-                </div>
-
-
-                <div class="achievement-list">
-
-                    <!-- UKBI -->
-
-                    <article class="achievement-item">
-
-                        <div class="achievement-year">
-                            2026
-                        </div>
-
-                        <div class="achievement-content">
-
-                            <span class="tag">
-                                Certification
-                            </span>
-
-                            <h3>
-                                UKBI — 680
-                            </h3>
-
-                            <p>
-                                Indonesian language proficiency
-                                certification with a score of 680.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- SDGs Essay -->
-
-                    <article class="achievement-item">
-
-                        <div class="achievement-year">
-                            Academic
-                        </div>
-
-                        <div class="achievement-content">
-
-                            <span class="tag">
-                                Research & Writing
-                            </span>
-
-                            <h3>
-                                SDGs Innovation Essay
-                            </h3>
-
-                            <p>
-                                An innovation essay exploring
-                                food-related issues within the
-                                Sustainable Development Goals.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             DIGITAL PRESENCE
-        ===================================================== -->
-
-        <section class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Digital Presence
-                    </p>
-
-                    <h2>
-                        Find me elsewhere on the web.
-                    </h2>
-
-                </div>
-
-
-                <div class="platform-grid">
-
                     <a
-                        href="https://github.com/danangsiseka"
-                        class="platform-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>GitHub</span>
-                        <span>↗</span>
-                    </a>
-
-
-                    <a
+                        class="platform"
                         href="https://independent.academia.edu/RasyaDanangKurniaSiseka"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>Academia.edu</span>
-                        <span>↗</span>
+                        Academia.edu
                     </a>
 
-
                     <a
-                        href="https://medium.com/@danangsiseka"
-                        class="platform-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>Medium</span>
-                        <span>↗</span>
-                    </a>
-
-
-                    <a
-                        href="https://substack.com/@danangsiseka"
-                        class="platform-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <span>Substack</span>
-                        <span>↗</span>
-                    </a>
-
-
-                    <a
+                        class="platform"
                         href="https://id.quora.com/profile/Danang-Siseka"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>Quora</span>
-                        <span>↗</span>
+                        Quora
                     </a>
 
+                    <a
+                        class="platform"
+                        href="https://medium.com/@danangsiseka"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Medium
+                    </a>
 
                     <a
+                        class="platform"
+                        href="https://substack.com/@danangsiseka"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Substack
+                    </a>
+
+                    <a
+                        class="platform"
                         href="https://danangsiseka.blogspot.com/"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>Blogger</span>
-                        <span>↗</span>
+                        Blogger
                     </a>
 
-
                     <a
+                        class="platform"
                         href="https://www.wattpad.com/user/DanangSiseka"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>Wattpad</span>
-                        <span>↗</span>
+                        Wattpad
                     </a>
 
-
                     <a
+                        class="platform"
                         href="https://www.youtube.com/@Danangsiseka"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>YouTube</span>
-                        <span>↗</span>
+                        YouTube
                     </a>
 
-
                     <a
+                        class="platform"
                         href="https://www.instagram.com/danangsiseka"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>Instagram</span>
-                        <span>↗</span>
+                        Instagram
                     </a>
-
 
                     <a
+                        class="platform"
                         href="https://linktr.ee/danangsiseka"
-                        class="platform-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>Linktree</span>
-                        <span>↗</span>
+                        Linktree
                     </a>
 
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- ====================================================
-             PERSONAL QUOTE
-        ===================================================== -->
-
-        <section class="section quote-section">
-
+        <!-- =====================================================
+             Quote
+             ===================================================== -->
+        <section class="quote-section">
             <div class="container">
 
-                <div class="quote-content">
-
-                    <p class="eyebrow">
-                        A Personal Reminder
-                    </p>
-
-                    <blockquote>
-                        “Pergilah ke tempat yang belum bernama,
-                        lalu biarkan langkahmu memberi nama
-                        pada tempat itu.”
-                    </blockquote>
-
-                    <p class="quote-author">
-                        — Danang Siseka
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ====================================================
-             CONNECT
-        ===================================================== -->
-
-        <section class="section connect">
-
-            <div class="container">
-
-                <div class="connect-content">
-
-                    <p class="eyebrow">
-                        Connect
-                    </p>
-
-                    <h2>
-                        One identity.<br>
-                        Many places to explore.
-                    </h2>
-
+                <blockquote class="quote">
                     <p>
-                        This website is the central hub for my work,
-                        ideas, and digital presence.
+                        “Pergilah ke tempat yang belum bernama, lalu biarkan langkahmu
+                        memberi nama pada tempat itu.”
                     </p>
 
-                    <div class="social-links">
+                    <cite>— Danang Siseka</cite>
+                </blockquote>
 
+            </div>
+        </section>
+
+        <!-- =====================================================
+             Connect
+             ===================================================== -->
+        <section class="connect-section">
+            <div class="container">
+
+                <div class="connect-grid">
+
+                    <div>
+                        <span class="section-label">Connect</span>
+
+                        <h2 class="section-title">
+                            Follow the work.
+                        </h2>
+
+                        <p>
+                            Explore my projects, writing, research, and other work
+                            across the platforms where I publish and build.
+                        </p>
+                    </div>
+
+                    <div class="connect-actions">
                         <a
+                            class="button button-primary"
                             href="https://github.com/danangsiseka"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1061,58 +698,41 @@
                         </a>
 
                         <a
-                            href="https://www.instagram.com/danangsiseka"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Instagram
-                        </a>
-
-                        <a
-                            href="https://www.youtube.com/@Danangsiseka"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            YouTube
-                        </a>
-
-                        <a
+                            class="button button-secondary"
                             href="https://linktr.ee/danangsiseka"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Linktree
+                            All Links
                         </a>
-
                     </div>
 
                 </div>
-
             </div>
-
         </section>
 
     </main>
 
-
-    <!-- ========================================================
-         FOOTER
-    ========================================================= -->
-
+    <!-- =========================================================
+         Footer
+         ========================================================= -->
     <footer class="site-footer">
+        <div class="container footer-inner">
 
-        <div class="container footer-content">
-
-            <p>
+            <p class="footer-text">
                 © 2026 Danang Siseka
             </p>
 
-            <p>
-                Built with HTML, CSS & GitHub Pages.
-            </p>
+            <a
+                class="footer-link"
+                href="https://github.com/danangsiseka"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Built with HTML &amp; CSS
+            </a>
 
         </div>
-
     </footer>
 
 </body>
