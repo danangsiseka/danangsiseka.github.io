@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://danangsiseka.github.io/sitemap.xml
